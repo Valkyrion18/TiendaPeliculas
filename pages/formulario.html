@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="../styles/style-form.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navUl">
+                <img id="logo" src="../logo/logo.png" alt="">
+                <li class="navItem"><a href="../index.html">Inicio</a></li>
+                <li class="navItem"><a href="./formulario.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-Formulario">
+        <div class="contenedor">
+
+            <form action="" class="form" id="form" onsubmit="">
+                <h2>Formulario de Registro</h2>
+                <label for="">Nombre</label>
+                <input id="inputNombre" class="cajon" type="text" placeholder="Nombre" required><br>
+                <label for="">Apellido</label>
+                <input id="inputApellido" class="cajon" type="text" placeholder="Apellido" required><br>
+                <label for="">Direccion</label>
+                <input id="inputAdrss" class="cajon" type="text" placeholder="Direccion" required><br>
+                <label for="">Telefono</label>
+                <input id="inputPhone" class="cajon" type="text" placeholder="Telefono"><br>
+                <label for="">Observaciones</label><br>
+                <textarea id="msj" cols="30" rows="10"></textarea><br>
+                <input id="btnEnviar" type="submit" value="Enviar" >
+            </form>
+        </div>
+    </div>
+
+    <script src="../scripts/formulario.js" type="module"></script>
+
+</body>
+
+</html>

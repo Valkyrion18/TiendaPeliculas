@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de peliculas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navUl">
+                <img id="logo" src="./logo/logo.png" alt="">
+                <li class="navItem"><a href="./index.html">Inicio</a></li>
+                <li class="navItem"><a href="../pages/formulario.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <main class="contenido-principal">
+            <img src="./image/fondo-ventana.jpg" class="contenido-principal__imagen" 
+            id="imagen-central">
+            <div class="contenido-principal__contenedor">
+                <h1 class="contenido-principal__titulo">Sinopsis de la pelicula</h1>
+                <p class="contenido-principal__resumen" id="sinopsis">
+                    Seleccione una pelicula para ver su descripcion
+                </p>
+            </div>
+        </main>
+
+        <div>
+            <div class="carousel">
+                <div class="carousel__contenedor">
+                    <button aria-label="Anterior" class="carousel__anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+    
+                    <div class="row" id="items"></div>
+    
+                    > <template id="template-card">
+                        <div class="card">
+                            <h5></h5>
+                            <img id="image" src="" alt="" class="img-thumbnail my-4"></img>
+                        </div>
+                    </template>
+    
+                    <button aria-label="Siguiente" class="carousel__siguiente">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+    
+                <div role="tablist" class="carousel__indicadores"></div>         
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js" type="module"></script>
+    <script src="../data/peliculas.js" type="module"></script>
+
+</body>
+
+</html>

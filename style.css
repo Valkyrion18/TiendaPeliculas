@@ -1,0 +1,176 @@
+body{
+    background-image: url('./image/fondo_pagina.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:'Trebuchet MS', sans-serif;
+}
+
+#navUl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 70px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    background-color: rgba(3, 0, 7, 0.877);
+    margin-left: 10%;;
+}
+
+.navItem{
+
+   display: inline;
+   letter-spacing: 2px; /*Espaciado en las letras*/
+   font-size: 20px;
+   margin-left: 10%;
+}
+
+a{
+    color: white;
+    text-decoration: none;/*Elimina la línea de abajo 
+    que indica enlace*/
+}
+
+#logo{
+    width: 150px;
+    height: 70px;
+    display: flex;
+    position: absolute;
+    right: 90%;
+}
+
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+    position: relative;
+}
+
+.contenido-principal__imagen {
+    vertical-align: top;
+	margin-right: 20px;
+	width: 550px;
+    height: 360px;
+    margin-top: 2%;
+	max-width: 550px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+    text-align: justify;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 48px;
+    color:rgba(75, 29, 131, 0.877);
+    text-align: center;
+    font-style: oblique;
+    font-size: 30px;
+}
+
+.contenido-principal__resumen {
+    text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #CFCFCF;
+}
+
+/*imagenes superheroes*/
+#image{
+    max-width: 100%;
+    width: 250px;
+    margin-left: 25px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer; /*la mano del cursor*/
+}
+
+/*tarjeta*/
+.card{
+    display: inline-block;
+   
+}
+
+#template-card{
+  display: flex;
+  
+}
+
+/*row del id items*/
+.row{
+    margin-left: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+h5{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/*ESTILOS DEL CARRUSEL*/
+
+.carousel__contenedor {
+	position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: 20px;
+    top: 140px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+    top: 140px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
